@@ -1,0 +1,102 @@
+body{
+  background: linear-gradient(to right, #000000, #07f3d4);
+  font-family: poppins;
+  background-size: 200%;
+ animation: grad 20s infinite alternate;
+  color: white !important;
+  overflow-x: hidden;
+}
+@keyframes grad {
+  0%{
+     background-position:left ;
+  }
+  100%{
+     background-position: right;
+  }
+}
+.navbar-dark{
+  background-color: rgba(242, 220, 245, 0) !important;
+  
+}
+
+.nav-link {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  
+  position: relative;
+}
+.nav-link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #ec0f0f;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover{
+  color: aquamarine !important;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.active{
+  color: white !important;
+  font-weight: bold !important;
+}
+
+
+.sk {
+    transform: scaleY(-1);
+    background-size: 100% 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease;
+    cursor: pointer;
+    height:160px !important;
+    align-items: center;
+    margin-bottom: 2rem;;
+  }
+  .front .sk{
+    background-image: linear-gradient(to top, #2ee3f0 100%, #1082f5 0%);
+  }
+  .back .sk{
+    background-image: linear-gradient(to top, #10f51b 100%, #1082f5 0%);
+  }
+  .db .sk{
+    background-image: linear-gradient(to top, #6586c0 100%, #1082f5 0%);
+  }
+  .pl .sk{
+    background-image: linear-gradient(to top, #107bf5 100%, #1082f5 0%);
+  }
+  .ot .sk{
+    background-image: linear-gradient(to top, #ff9900 100%, #1082f5 0%);
+  }
+  .gs .sk{
+    background-image: linear-gradient(to top, #f5f110 100%, #1082f5 0%);
+  }
+
+  .sk:hover {
+    background-size: 100% 75%;
+  }
+  .sk2{
+    transform: scaleY(-1);
+    
+    padding-bottom: 2rem;
+    font-size: 5rem;
+  }
+  .tx-2{
+    transform: scaleY(-1);
+    position: relative;
+    bottom:8rem;
+
+    font-size: 13px;
+
+     }

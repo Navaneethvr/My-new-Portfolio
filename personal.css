@@ -1,0 +1,85 @@
+body {
+    /* background: linear-gradient(to right, #4dc9e6, rgb(4, 92, 255),#260ec0); */
+    /* background: linear-gradient(to right, #2a245aaf, #302b63, #24243e);; */
+    background: linear-gradient(to right, #051c1f, #39608a);
+ 
+    background-size: 200%;
+   animation: grad 20s infinite alternate;
+  
+   color: rgb(0, 0, 0);
+}
+@keyframes grad {
+    0%{
+       background-position:left ;
+    }
+    100%{
+       background-position: right;
+    }
+}
+
+.navbar-dark{
+  background-color: rgb(6, 0, 7) !important;
+  
+}
+
+.nav-link {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  
+  position: relative;
+}
+.nav-link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #ec0f0f;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover{
+  color: aquamarine !important;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.active{
+  color: white !important;
+  font-weight: bold !important;
+}
+
+  #dp {
+    filter: grayscale(100%); /* Apply the grayscale filter */
+    transition: filter 0.5s ease;
+  }
+  
+  #dp:hover {
+    filter: none; /* Remove the filter on hover (reset to the initial value) */
+  }
+h4{
+    font-family: poppins black;
+}
+h1{
+    font-family: poppins semibold;
+    font-size: 30px;
+
+}
+h5{
+    font-family: poppins light;
+    font-size: 17px;
+}
+
+
+.detail{
+    background:#9ed8db27;
+    backdrop-filter: blur(20px);
+    color: white !important;
+}
